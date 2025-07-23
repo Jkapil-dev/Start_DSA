@@ -2,7 +2,7 @@ public class FloorNumber {
     public static void main(String[] args){
         int[] array= {2, 4, 7, 10, 15, 18, 21, 25, 30};
         try {
-            int answer = floorNumber(array, 42);
+            int answer = floorNumber(array, 30);
             System.out.println("floor Element :" + answer);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Element not found!");
