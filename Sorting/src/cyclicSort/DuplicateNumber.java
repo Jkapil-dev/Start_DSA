@@ -1,6 +1,10 @@
 package cyclicSort;
 
 public class DuplicateNumber {
+    public static void main(String[] args) {
+
+    }
+
     public int findDuplicate(int[] nums) {
         int i = 0;
         while (i < nums.length) {
@@ -20,3 +24,4 @@ public class DuplicateNumber {
         }
         return -1;
     }
+}
