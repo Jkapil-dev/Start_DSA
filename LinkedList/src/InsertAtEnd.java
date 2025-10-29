@@ -17,6 +17,9 @@ public class InsertAtEnd {
                             // node and new node becomes last node
 
         return head;
+
+        //Time Complexity: O(n)
+        //Auxiliary Space: O(1)
     }
     static void printList(Node node) {
         while (node != null) {
