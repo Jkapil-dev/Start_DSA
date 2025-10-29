@@ -49,7 +49,7 @@ class Main{
         head.next.next.next=new Node(40);
 
         // transversListIteratively(head);
-        transverseListRecursevely(head);
+        //transverseListRecursevely(head);
     }
 
 
