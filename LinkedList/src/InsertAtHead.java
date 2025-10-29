@@ -1,4 +1,4 @@
-public class InsertionInLL {
+public class InsertAtHead {
 
       static Node insertAtHead(Node head,int data_var){ //function to insert node at beginning
 
