@@ -1,6 +1,8 @@
+package Insertion_methods;
+
 public class InsertAtSpecificPosition {
 
-    static Node insertAtSpecificPosition(Node head,int pos,int value){
+    static Node insertAtSpecificPosition(Node head, int pos, int value){
         if(pos<1){
             return head;
         }
@@ -33,7 +35,7 @@ public class InsertAtSpecificPosition {
         }
         System.out.println();
     }
-    public static void main(String args[]){
+    public static void main(String[] args){
         Node head =new Node(10);
         head.next=new Node(20);
         head.next.next=new Node(30);

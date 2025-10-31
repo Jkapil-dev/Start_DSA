@@ -1,6 +1,8 @@
+package Insertion_methods;
+
 public class InsertAtEnd {
 
-    static Node insertAtEnd(Node head,int data_var){
+    static Node insertAtEnd(Node head, int data_var){
         Node newNode =new Node(data_var);//create new node
         if(head ==null){
             return newNode;
@@ -33,7 +35,7 @@ public class InsertAtEnd {
     }
 
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         Node head =new Node(10);
         head.next=new Node(20);
         head.next.next=new Node(30);

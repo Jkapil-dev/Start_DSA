@@ -1,19 +1,10 @@
-public class Node{
-    int data;//data part of node
+package Insertion_methods;
 
-    Node next;//pointer to the next node in list
-
-    public Node(int data_var){
-        this.data=data_var;
-        this.next=null;
-    }
-
-}
-class Main{
-    public static void transversListIteratively(Node head){ //this function is used to transvers list in itretative manner
-        while(head!=null){
+class transversListIteratively {
+    public static void transversListIteratively(Node head) { //this function is used to transvers list in itretative manner
+        while (head != null) {
             System.out.print(head.data);
-            if(head.next != null){
+            if (head.next != null) {
                 System.out.print("->");
             }
             head = head.next;
@@ -26,13 +17,13 @@ class Main{
     }
 
 
-    public static void transverseListRecursevely(Node head){
-        if(head == null){
+    public static void transverseListRecursevely(Node head) {
+        if (head == null) {
             System.out.println();
             return;
         }
         System.out.print(head.data);
-        if(head.next != null){
+        if (head.next != null) {
             System.out.print("->");
         }
         transverseListRecursevely(head.next);
@@ -42,13 +33,13 @@ class Main{
     }
 
 
-    public static void main(String args[]){
-        Node head =new Node(10);
-        head.next=new Node(20);
-        head.next.next=new Node(30);
-        head.next.next.next=new Node(40);
+    public static void main(String[] args) {
+        Node head = new Node(10);
+        head.next = new Node(20);
+        head.next.next = new Node(30);
+        head.next.next.next = new Node(40);
 
-        // transversListIteratively(head);
+        // Insertion_methods.transversListIteratively(head);
         //transverseListRecursevely(head);
     }
 

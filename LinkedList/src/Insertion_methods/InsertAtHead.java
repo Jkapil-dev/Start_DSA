@@ -1,6 +1,8 @@
+package Insertion_methods;
+
 public class InsertAtHead {
 
-      static Node insertAtHead(Node head,int data_var){ //function to insert node at beginning
+      static Node insertAtHead(Node head, int data_var){ //function to insert node at beginning
 
         Node newNode=new Node(data_var);
         newNode.next=head;
