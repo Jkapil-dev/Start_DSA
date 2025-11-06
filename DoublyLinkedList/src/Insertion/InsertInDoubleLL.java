@@ -10,6 +10,21 @@ public class InsertInDoubleLL {
         }
         return newNode;
     }
+    static Node insertAtEnd(Node head,int data){
+        Node newNode= new Node(data);
+        if(head==null){
+            head=newNode;
+            return head;
+        }
+        Node temp= head;
+        while(temp.next!=null){
+            temp=temp.next;
+        }
+        temp.next=newNode;
+        newNode.prev=temp;
+
+        return head;
+    }
 
     static void display(Node head){
             Node temp=head;
@@ -37,6 +52,7 @@ public class InsertInDoubleLL {
         System.out.println("Before Insertion:");
         display(head);
         head=insertAtHead(head,1);
+        head=insertAtEnd(head,100);
         System.out.println("After Insertion:");
         display(head);
     }
