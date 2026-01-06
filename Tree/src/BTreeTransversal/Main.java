@@ -4,6 +4,9 @@ import static BTreeTransversal.NonRecursivePreOrderTransversal.StackPreOrderTrav
 import static BTreeTransversal.RecursivePreOrderTransversal.POTransversal;
 import static BTreeTransversal.RecursiveInorderTraversal.recursiveInOrder;
 import static BTreeTransversal.NonRecursiveInOrder.inOrderTraversal;
+import static BTreeTransversal.RecursivePostOrder.recursivePostOrder;
+import static BTreeTransversal.NonRecursivePostOrder.postOrderTraversal;
+
 
 public class Main {
     public static void main(String[] args){
@@ -24,5 +27,10 @@ public class Main {
         recursiveInOrder(root);
         System.out.println();
         System.out.println("InOrder traversal using stack :"+ inOrderTraversal(root));
+
+        System.out.print("Recursive postOrder Traversal :");
+        recursivePostOrder(root);
+        System.out.println();
+        System.out.println("postOrder traversal using stack :"+ postOrderTraversal(root));
     }
 }
