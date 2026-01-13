@@ -8,14 +8,14 @@ public class InsertAtEnd {
             return newNode;
         }
         Node last = head;//if you use directly head in loop then after endin of loop head pointer will remain at last
-                          //and not at start , it will cause issue for
-                            //  further operations ,that's why we are using temporary pointer
+                         //and not at start , it will cause issue for
+                         //  further operations ,that's why we are using temporary pointer
 
         while(last.next != null){ //takes to last node
             last=last.next;
         }
 
-        last.next=newNode; // change pointer of current last node to new
+        last.next=newNode;  // change pointer of current last node to new
                             // node and new node becomes last node
 
         return head;
@@ -40,10 +40,10 @@ public class InsertAtEnd {
         head.next=new Node(20);
         head.next.next=new Node(30);
         head.next.next.next=new Node(40);
-        System.out.println("Befor insertion;");
+        System.out.println("Befor insertion:");
         printList(head);
         head = insertAtEnd(head,50);
-        System.out.println("After insertion;");
+        System.out.println("After insertion:");
         printList(head);
 
     }
