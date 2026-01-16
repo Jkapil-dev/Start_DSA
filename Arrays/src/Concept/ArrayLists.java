@@ -1,4 +1,4 @@
-package DSA.Arrays;
+package DSA.Arrays.Concept;
 import java.util.ArrayList;
 public class ArrayLists {
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package DSA.Arrays;
+package DSA.Arrays.Concept;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -24,7 +24,7 @@ public class Array {
         for(int j:rollNo){
             System.out.print(j+" ");
         }
-        System.out.println(Arrays.toString(rollNo));
+        System.out.println(Arrays.toString(rollNo));  
 
 
 
