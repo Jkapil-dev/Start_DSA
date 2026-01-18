@@ -1,16 +1,21 @@
-public class FloorNumber {
+package Concept_and_application;
+
+public class CealingNumber {
     public static void main(String[] args){
         int[] array= {2, 4, 7, 10, 15, 18, 21, 25, 30};
-        try {
-            int answer = floorNumber(array, 30);
-            System.out.println("floor Element :" + answer);
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Element not found!");
-        }
+       try {
+           int answer = cealingNumber(array, 44);
+           System.out.println("Celing Element :" + answer);
+       } catch (ArrayIndexOutOfBoundsException e) {
+           System.out.println("Element not present!");
+       }
+//
+
+
 
     }
 
-    static int floorNumber(int[] array,int targetElement){
+    static int cealingNumber(int[] array,int targetElement){
         int start=0;
         int end=array.length-1;
 
@@ -24,6 +29,6 @@ public class FloorNumber {
                 return array[mid];
             }
         }
-        return array[end];
+        return array[start];
     }
 }

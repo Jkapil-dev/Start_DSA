@@ -1,3 +1,5 @@
+package Concept_and_application;
+
 public class BinarySearch {
   public static void main(String[] args){
       int[] array= {2, 4, 7, 10, 15, 18, 21, 25, 30};

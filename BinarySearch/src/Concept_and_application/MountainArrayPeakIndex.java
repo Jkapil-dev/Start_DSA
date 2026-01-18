@@ -1,3 +1,5 @@
+package Concept_and_application;
+
 public class MountainArrayPeakIndex {
     public static void main(String[] args){
         int[] mountainArray={0, 1, 4, 8, 12, 10, 6, 2};

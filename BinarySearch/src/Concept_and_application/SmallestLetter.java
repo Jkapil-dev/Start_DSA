@@ -1,3 +1,5 @@
+package Concept_and_application;
+
 import java.util.Scanner;
 
 public class SmallestLetter {
