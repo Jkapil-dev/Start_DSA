@@ -4,7 +4,7 @@ public class CealingNumber {
     public static void main(String[] args){
         int[] array= {2, 4, 7, 10, 15, 18, 21, 25, 30};
        try {
-           int answer = cealingNumber(array, 44);
+           int answer = cealingNumber(array, 8);
            System.out.println("Celing Element :" + answer);
        } catch (ArrayIndexOutOfBoundsException e) {
            System.out.println("Element not present!");
