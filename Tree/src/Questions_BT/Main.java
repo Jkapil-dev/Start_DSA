@@ -1,5 +1,5 @@
-package Questions;
-import static Questions.MaximumElementInBT.findMaxBT;
+package Questions_BT;
+import static Questions_BT.MaximumElementInBT.findMaxBT;
 
 
 public class Main {

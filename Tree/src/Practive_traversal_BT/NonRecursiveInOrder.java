@@ -1,4 +1,4 @@
-package Practive_traversal;
+package Practive_traversal_BT;
 import java.util.Stack;
 import java.util.ArrayList;
 

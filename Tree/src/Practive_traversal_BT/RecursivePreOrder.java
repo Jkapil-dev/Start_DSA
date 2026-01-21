@@ -1,4 +1,4 @@
-package Practive_traversal;
+package Practive_traversal_BT;
 
 public class RecursivePreOrder {
     static void recursivePostOrder(Node root){

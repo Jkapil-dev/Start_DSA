@@ -1,6 +1,6 @@
-package Practive_traversal;
+package Practive_traversal_BT;
 
-import static Practive_traversal.NonRecursivePostOrder.doPostOrder;
+import static Practive_traversal_BT.NonRecursivePostOrder.doPostOrder;
 
 public class Main {
     public static void main(String[] args) {
