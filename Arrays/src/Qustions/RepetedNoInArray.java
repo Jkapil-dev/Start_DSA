@@ -1,5 +1,7 @@
 package DSA.Arrays.Qustions;
 
+import java.util.Arrays;
+
 public class RepetedNoInArray {
     public int[] findErrorNums(int[] nums) {
         int i = 0;
@@ -18,7 +20,6 @@ public class RepetedNoInArray {
             if(nums[j]!=j+1){
                 return new int[]{nums[j],j+1};
             }
-
         }
         return new int[]{-1,-1};
     }
