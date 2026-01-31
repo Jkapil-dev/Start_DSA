@@ -1,5 +1,8 @@
 package BTreeTransversal;
 
+import java.util.List;
+
+import static BTreeTransversal.LevelOrder.levelOrder;
 import static BTreeTransversal.NonRecursivePreOrderTransversal.StackPreOrderTraversal;
 import static BTreeTransversal.RecursivePreOrderTransversal.POTransversal;
 import static BTreeTransversal.RecursiveInorderTraversal.recursiveInOrder;
@@ -34,6 +37,7 @@ public class Main {
         System.out.println("postOrder traversal using stack :"+ postOrderTraversal(root));
 
         System.out.println("LevelOrder Traversal :");
-        levelOrder(root);
+        List<List<Integer>> ans =levelOrder(root);
+        System.out.println(ans);
     }
 }
