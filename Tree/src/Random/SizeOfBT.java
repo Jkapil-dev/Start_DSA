@@ -1,11 +1,9 @@
 package Random;
 
-
-
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class SizeOfBT {
+public class SizeOfBT {//Note: size of tree means no of nodes present in the tree
     int sizeOfBT(TreeNode root){
         if(root==null)return 0;
         Queue<TreeNode> queue = new LinkedList<>();
