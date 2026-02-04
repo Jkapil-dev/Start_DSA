@@ -1,7 +1,7 @@
 package ThreadedBinaryTree;
 
 public class InOrderSuccessor {
-    ThreadedNode inOrderSuccessor(ThreadedNode root){
+    public static ThreadedNode inOrderSuccessor(ThreadedNode root){
 
         // Case 1: Right pointer is a thread -> direct successor
         if(root.rTag==0){
