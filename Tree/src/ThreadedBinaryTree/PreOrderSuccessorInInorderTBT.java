@@ -1,7 +1,7 @@
 package ThreadedBinaryTree;
 
 public class PreOrderSuccessorInInorderTBT {
-    ThreadedNode preOrderSuccessor(ThreadedNode p){
+     static ThreadedNode preOrderSuccessor(ThreadedNode p){
         ThreadedNode position;
         //case 1: left child exists
         if(p.lTag==1){
@@ -15,4 +15,5 @@ public class PreOrderSuccessorInInorderTBT {
         }
         return position.right;
     }
+
 }
