@@ -1,4 +1,4 @@
-package DSA.Arrays.Qustions;
+package DSA.Arrays.Questions;
 
 public class MaxConsecutiveOne {
     public int findMaxConsecutiveOnes(int[] nums) {

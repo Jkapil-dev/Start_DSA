@@ -1,4 +1,4 @@
-package DSA.Arrays.Qustions;
+package DSA.Arrays.Questions;
 
 public class ShuffelArray {
     public int[] shuffle(int[] nums, int n) {

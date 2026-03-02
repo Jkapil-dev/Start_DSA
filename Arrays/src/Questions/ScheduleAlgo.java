@@ -1,4 +1,4 @@
-package DSA.Arrays.Qustions;
+package DSA.Arrays.Questions;
 import java.util.Scanner;
 public class ScheduleAlgo {
 

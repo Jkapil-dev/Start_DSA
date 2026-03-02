@@ -1,6 +1,4 @@
-package DSA.Arrays.Qustions;
-
-import java.util.Arrays;
+package DSA.Arrays.Questions;
 
 public class RepetedNoInArray {
     public int[] findErrorNums(int[] nums) {

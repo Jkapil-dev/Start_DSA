@@ -1,4 +1,4 @@
-package DSA.Arrays.Qustions;
+package DSA.Arrays.Questions;
 
 public class ConcitenatilonOfArray {
     public int[] getConcatenation(int[] nums) {
