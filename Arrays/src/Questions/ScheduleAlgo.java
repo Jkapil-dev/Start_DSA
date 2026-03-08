@@ -45,19 +45,30 @@ public class ScheduleAlgo {
 
         }
 
-        static void printArr(int[][] arr, int rowLen , int colLne){
-            int avgTAT=0;
-            int avgWT=0;
-            System.out.println("P | AT | BT | CT | TAT | WT |");
-            for(int i=0 ; i < rowLen; i++){
-                for(int j=0 ; j< colLne;j++){
+    static void printArr(int[][] arr, int rowLen , int colLen){
+        int totalTAT = 0;
+        int totalWT = 0;
 
-                    System.out.print(" "+arr[i][j] +" | ");
-                }
-                System.out.println();
-            }
+        System.out.println("\n================ FCFS Scheduling Table ================");
+        System.out.printf("%-5s %-5s %-5s %-5s %-6s %-5s\n", "P", "AT", "BT", "CT", "TAT", "WT");
+        System.out.println("-------------------------------------------------------");
 
+        for(int i = 0; i < rowLen; i++){
+            System.out.printf("%-5d %-5d %-5d %-5d %-6d %-5d\n",
+                    arr[i][0], arr[i][1], arr[i][2],
+                    arr[i][3], arr[i][4], arr[i][5]);
+
+            totalTAT += arr[i][4];
+            totalWT += arr[i][5];
         }
+
+        double avgTAT = (double) totalTAT / rowLen;
+        double avgWT = (double) totalWT / rowLen;
+
+        System.out.println("-------------------------------------------------------");
+        System.out.printf("Average Turnaround Time : %.2f\n", avgTAT);
+        System.out.printf("Average Waiting Time    : %.2f\n", avgWT);
+    }
 
     }
 
