@@ -1,6 +1,4 @@
-package Random;
-
-import com.sun.source.tree.Tree;
+package Questions_02;
 
 //LCA=lowest common ancestor
 public class BST_LCA {

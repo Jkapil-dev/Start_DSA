@@ -1,4 +1,4 @@
-package Random;
+package Questions_02;
 
 public class SameTree {
     public boolean isSameTree(TreeNode p, TreeNode q) {

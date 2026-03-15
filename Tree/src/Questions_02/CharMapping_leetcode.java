@@ -1,4 +1,4 @@
-package Random;
+package Questions_02;
 
 public class CharMapping_leetcode {
 
