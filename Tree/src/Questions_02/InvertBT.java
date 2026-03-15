@@ -14,4 +14,16 @@ public class InvertBT {
 
         return root;
     }
+    public TreeNode invertTree02(TreeNode root) {
+        if(root==null)return null ;
+
+
+        TreeNode left=invertTree02(root.left);
+        TreeNode right=invertTree02(root.right);
+
+        root.left=right;
+        root.right=left;
+
+        return root;
+    }
 }
