@@ -1,15 +1,15 @@
 package deletion;
 
 public class DeleteAtEnd {
-   static  Node deleteAtEnd(Node head){
-       Node temp=head;
+   static ListNode deleteAtEnd(ListNode head){
+       ListNode temp=head;
         while(temp.next.next != null){
             temp=temp.next;
         }
        temp.next=null;
         return head;
     }
-    static void print(Node head){
+    static void print(ListNode head){
         while(head!=null){
             System.out.print(head.data);
             if(head.next!=null){
@@ -20,9 +20,9 @@ public class DeleteAtEnd {
         System.out.println();
     }
     public static void main(String[] args){
-        Node head=new Node(5);
-        head.next=new Node(10);
-        head.next.next=new Node(20);
+        ListNode head=new ListNode(5);
+        head.next=new ListNode(10);
+        head.next.next=new ListNode(20);
         System.out.println("Before deletion: ");
         print(head);
         head=deleteAtEnd(head);

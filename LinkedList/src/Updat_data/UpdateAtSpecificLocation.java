@@ -1,7 +1,5 @@
 package Updat_data;
 
-import deletion.Node;
-
 class LNode{
     int data;
     LNode next;

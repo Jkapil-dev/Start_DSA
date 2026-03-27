@@ -1,9 +1,9 @@
 package deletion;
 
-public class Node {
+public class ListNode {
     int data;
-    deletion.Node next;
-    Node(int data_var){
+    public ListNode next;
+    ListNode(int data_var){
         this.data=data_var;
         this.next=null;
     }

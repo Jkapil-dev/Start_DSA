@@ -2,7 +2,7 @@ package deletion;
 
 public class DeleteAtSpecificPosition {
 
-    static void print(Node head){
+    static void print(ListNode head){
         while(head!=null){
             System.out.print(head.data);
             if(head.next!=null){
@@ -12,8 +12,8 @@ public class DeleteAtSpecificPosition {
         }
         System.out.println();
     }
-    static Node deleteAtSpecificLocation(Node head ,int pos ){
-        Node current=head;
+    static ListNode deleteAtSpecificLocation(ListNode head , int pos ){
+        ListNode current=head;
         if(head==null){
             System.out.println("List is empty");
             return null;
@@ -21,7 +21,7 @@ public class DeleteAtSpecificPosition {
             head=head.next;
             return head;
         }
-        Node prev=null;
+        ListNode prev=null;
         for(int i=0;i<pos-1;i++){
             prev=current;
             current=current.next;
@@ -31,10 +31,10 @@ public class DeleteAtSpecificPosition {
 
     }
      public static void main(String[] args){
-         Node head=new Node(5);
-         head.next=new Node(10);
-         head.next.next=new Node(20);
-         head.next.next.next=new Node(30);
+         ListNode head=new ListNode(5);
+         head.next=new ListNode(10);
+         head.next.next=new ListNode(20);
+         head.next.next.next=new ListNode(30);
          System.out.println("Before deletion: ");
          print(head);
          head=deleteAtSpecificLocation(head,2);
