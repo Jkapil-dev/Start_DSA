@@ -10,7 +10,10 @@ public class RemoveDuplicates {
         while(head!=null){
             if(head.val>current.val){
                 current.next=new ListNode(head.val);
+                current=current.next;
             }
+
+            head=head.next;
         }
         return result;
     }
