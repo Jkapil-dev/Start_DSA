@@ -3,7 +3,7 @@ package Questions;
 import java.util.HashMap;
 
 public class FrequencyCount {
-    public static void main(String[] args) {
+    static void main() {
         int[] array = {1, 2, 2, 3, 1, 1};
         HashMap<Integer,Integer> frequencyMap = new HashMap<>();
         for (int i = 0; i < array.length; i++) {
