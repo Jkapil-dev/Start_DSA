@@ -1,4 +1,4 @@
-package src.concept;
+package concept;
 
 import java.util.HashMap;
 import java.util.Map;
