@@ -2,22 +2,23 @@ package DSA.Arrays.Questions;
 
 public class ValidParenthesis {
     public boolean isPalindrome(String s) {
-        s=s.toLowerCase();
-        int leftPointer=0;
-        int rightPointer=s.length()-1;
-        while(leftPointer<rightPointer){
-            if(!Character.isLetterOrDigit(s.charAt(leftPointer))){
+        s = s.toLowerCase();
+        int leftPointer = 0;
+        int rightPointer = s.length() - 1;
+        while (leftPointer < rightPointer) {
+            if (!Character.isLetterOrDigit(s.charAt(leftPointer))) {
                 leftPointer++;
                 continue;
             }
-            if(!Character.isLetterOrDigit(s.charAt(rightPointer))){
+            if (!Character.isLetterOrDigit(s.charAt(rightPointer))) {
                 rightPointer--;
                 continue;
             }
 
-            if(s.charAt(leftPointer)!=s.charAt(rightPointer))return false;
+            if (s.charAt(leftPointer) != s.charAt(rightPointer)) return false;
             leftPointer++;
             rightPointer--;
         }
         return true;
+    }
 }
