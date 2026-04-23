@@ -10,7 +10,6 @@ public class CPUScheduling {
     public static void main(String[] args) {
 
         while (true) {
-
             System.out.println("\nCPU Scheduling Algorithms");
             System.out.println("1. FCFS");
             System.out.println("2. SJF (Non Preemptive)");
@@ -19,20 +18,19 @@ public class CPUScheduling {
             System.out.println("5. Priority (Preemptive)");
             System.out.println("6. Round Robin");
             System.out.println("7. Exit");
-
             System.out.print("Enter choice: ");
             int choice = sc.nextInt();
 
             switch (choice) {
 
-                case 1: fcfs(); break;
-                case 2: sjf(); break;
-                case 3: srtf(); break;
-                case 4: priorityNon(); break;
-                case 5: priorityPre(); break;
-                case 6: roundRobin(); break;
-                case 7: System.exit(0);
-                default: System.out.println("Invalid choice");
+            case 1: fcfs(); break;
+            case 2: sjf(); break;
+            case 3: srtf(); break;
+            case 4: priorityNon(); break;
+            case 5: priorityPre(); break;
+            case 6: roundRobin(); break;
+            case 7: System.exit(0);
+            default: System.out.println("Invalid choice");
             }
         }
     }
@@ -52,7 +50,6 @@ public class CPUScheduling {
 
             System.out.print("Arrival time P" + (i + 1) + ": ");
             arr[i][1] = sc.nextInt();
-
             System.out.print("Burst time P" + (i + 1) + ": ");
             arr[i][2] = sc.nextInt();
         }
@@ -61,8 +58,7 @@ public class CPUScheduling {
 
         for (int i = 0; i < n; i++) {
 
-            if (time < arr[i][1])
-                time = arr[i][1];
+            if (time < arr[i][1])time = arr[i][1];
 
             time += arr[i][2];
 
